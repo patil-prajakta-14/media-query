@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    
+    <style>
+
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #faeee7;
+        }
+        .main-heading{
+            font-size: 40px;
+            text-align: center;
+            color: #33272a;
+        }
+        .book-img{
+            height: 40px;
+            margin-left: 10px;
+            position: absolute;
+            top: 30px;
+        }
+        .navbaar{
+            background-color: #ff8ba7;
+            padding: 5px 20px;
+            border: solid 1px #ff1a4f;
+        }
+        .text{
+            color: #33272a;
+            font-size: 30px;
+            margin-left: 660px;
+        }
+        .fantasy-imgs{
+            height: 230px;
+            width: 180px;
+            margin-top: 25px;
+            margin-left: 50px;
+            border: solid 1px #262626;
+        }
+        .card{
+            background-color: #f2f2f2;
+            height: 470px;
+            width: 280px;
+            margin-top: 40px;
+            border: solid 1px #ff1a4f;
+            border-radius: 20px;
+            margin-bottom: 40px;
+        }
+        .key-feature{
+            margin-left: 50px;
+            font-size: 18px;
+        }
+        .btn{
+            background-color: #ff8ba7;
+            padding: 5px 10px;
+            border-radius: 12px;
+            margin-left: 100px;
+            border: none;
+            border: #ff1a4f solid 1px;
+        }
+        .btn:hover{
+            box-shadow: 2px 2px 2px 2px #ff1a4f;
+        }
+        .card-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+
+        /* Mobile Device */
+        @media  screen and (max-width: 500px) {
+            .main-heading{
+            font-size: 25px;
+          }
+          .book-img{
+            height: 25px;
+            margin-left: 10px;
+            position: absolute;
+            top: 20px;
+          }
+          .navbaar{
+            
+            padding: 3px 8px;
+          }
+          .text{
+            font-size: 22px;
+            margin-left: 160px;
+          }
+          .card{
+            height: 470px;
+            width: 280px;
+            margin-top: 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+          }
+          .fantasy-imgs{
+            height: 230px;
+            width: 180px;
+            margin-top: 30px;
+            margin-left: 50px;
+          }
+          .card-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+          }
+        }
+        /* Tablet Device */
+        @media  screen and (min-width: 501px) and (max-width: 768px) {
+            .main-heading{
+            font-size: 30px;
+          }
+          .book-img{
+            height: 30px;
+            margin-left: 10px;
+            position: absolute;
+            top: 20px;
+          }
+          .navbaar{
+            
+            padding: 3px 8px;
+          }
+          .text{
+            font-size: 24px;
+            margin-left: 220px;
+          }
+          .card{
+            height: 470px;
+            width: 280px;
+            margin-top: 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+          }
+          .fantasy-imgs{
+            height: 230px;
+            width: 180px;
+            margin-top: 30px;
+            margin-left: 50px;
+          }
+          .card-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+          }
+
+        }
+    </style>
+</head>
+<body>
+    <h1 class="main-heading">
+        Book Store
+        <img src="book.png" class="book-img" alt="Books">
+    </h1>
+
+    <div class="navbaar">
+        <span class="text">
+            Fantasy Books
+        </span>
+    </div>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="harry-potter.jpg" class="fantasy-imgs" alt="harry-potter book img">
+            <p class="key-feature"><b>Author :</b> J. K. Rowling</p>
+            <p class="key-feature"><b>Language :</b> English</p>
+            <p class="key-feature"><b>Pages :</b> 223</p>
+            <p class="key-feature"><b>Price :</b><del> 313/-</del> 289/-</p>
+            <button class="btn">
+                <b>Buy Now</b>
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="richard.jpg" class="fantasy-imgs" alt="Richard book img">
+            <p class="key-feature"><b>Author :</b> 	Richard Adams</p>
+            <p class="key-feature"><b>Language :</b> 	English, Lapine</p>
+            <p class="key-feature"><b>Pages :</b> 413</p>
+            <p class="key-feature"><b>Price :</b><del> 290/-</del> 250/-</p>
+            <button class="btn">
+                <b>Buy Now</b>
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="buried.png" class="fantasy-imgs" alt="Buried book img">
+            <p class="key-feature"><b>Author :</b> 	Kazuo Ishiguro</p>
+            <p class="key-feature"><b>Language :</b> English</p>
+            <p class="key-feature"><b>Pages :</b> 345</p>
+            <p class="key-feature"><b>Price :</b><del> 310/-</del> 278/-</p>
+            <button class="btn">
+                <b>Buy Now</b>
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="tigana.jpg" class="fantasy-imgs" alt="Tigana book img">
+            <p class="key-feature"><b>Author :</b> 	Guy Gavriel Kay</p>
+            <p class="key-feature"><b>Language :</b> English</p>
+            <p class="key-feature"><b>Pages :</b> 673</p>
+            <p class="key-feature"><b>Price :</b><del> 230/-</del> 199/-</p>
+            <button class="btn">
+                <b>Buy Now</b>
+            </button>
+        </div>
+    </div>
+        
+
+    <div class="navbaar">
+        <span class="text">
+            Mystery Books
+        </span>
+    </div>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="murder.jpg" class="fantasy-imgs" alt="Murder book img">
+            <p class="key-feature"><b>Author :</b> 	Chetan Bhagat</p>
+            <p class="key-feature"><b>Language :</b> Indian English</p>
+            <p class="key-feature"><b>Pages :</b> 312</p>
+            <p class="key-feature"><b>Price :</b><del> 313/-</del> 289/-</p>
+            <button class="btn">
+                <b>Buy Now</b>
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="verity.jpg" class="fantasy-imgs" alt="Verity book img">
+            <p class="key-feature"><b>Author :</b> 	Colleen Hoover</p>
+            <p class="key-feature"><b>Language :</b> 	English</p>
+            <p class="key-feature"><b>Pages :</b> 336</p>
+            <p class="key-feature"><b>Price :</b><del> 290/-</del> 250/-</p>
+            <button class="btn">
+                <b>Buy Now</b>
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="river.jpg" class="fantasy-imgs" alt="River book img">
+            <p class="key-feature"><b>Author :</b> 	Clare Chase</p>
+            <p class="key-feature"><b>Language :</b> English</p>
+            <p class="key-feature"><b>Pages :</b> 345</p>
+            <p class="key-feature"><b>Price :</b><del> 310/-</del> 278/-</p>
+            <button class="btn">
+                <b>Buy Now</b>
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="shutter.jpg" class="fantasy-imgs" alt="shutter book img">
+            <p class="key-feature"><b>Author :</b> 	Dennis Lehane</p>
+            <p class="key-feature"><b>Language :</b> English</p>
+            <p class="key-feature"><b>Pages :</b> 380</p>
+            <p class="key-feature"><b>Price :</b><del> 230/-</del> 199/-</p>
+            <button class="btn">
+                <b>Buy Now</b>
+            </button>
+        </div>
+    </div>
+          
+
+    <div class="navbaar">
+        <span class="text">
+            Comedy Books
+        </span>
+    </div>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="good.jpg" class="fantasy-imgs" alt="Good book img">
+            <p class="key-feature"><b>Author :</b> Terry Pratchett</p>
+            <p class="key-feature"><b>Language :</b> English</p>
+            <p class="key-feature"><b>Pages :</b> 288</p>
+            <p class="key-feature"><b>Price :</b><del> 313/-</del> 289/-</p>
+            <button class="btn">
+                <b>Buy Now</b>
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="comfort.jpg" class="fantasy-imgs" alt="comfort book img">
+            <p class="key-feature"><b>Author :</b> 	Stella Gibbons</p>
+            <p class="key-feature"><b>Language :</b> Indian English</p>
+            <p class="key-feature"><b>Pages :</b> 307</p>
+            <p class="key-feature"><b>Price :</b><del> 290/-</del> 250/-</p>
+            <button class="btn">
+                <b>Buy Now</b>
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="preety.jpg" class="fantasy-imgs" alt="pretty girl book img">
+            <p class="key-feature"><b>Author :</b> 	David Sedaris</p>
+            <p class="key-feature"><b>Language :</b> Latin,English</p>
+            <p class="key-feature"><b>Pages :</b> 328</p>
+            <p class="key-feature"><b>Price :</b><del> 310/-</del> 278/-</p>
+            <button class="btn">
+                <b>Buy Now</b>
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="lamb.jpg" class="fantasy-imgs" alt="lamb book img">
+            <p class="key-feature"><b>Author :</b> 	Christopher Moore</p>
+            <p class="key-feature"><b>Language :</b> English,Lapin</p>
+            <p class="key-feature"><b>Pages :</b> 446</p>
+            <p class="key-feature"><b>Price :</b><del> 230/-</del> 199/-</p>
+            <button class="btn">
+                <b>Buy Now</b>
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
